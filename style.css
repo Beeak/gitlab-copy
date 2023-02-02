@@ -4,18 +4,19 @@
     box-sizing: border-box;
 }
 
-body {
-    height: 5000px;
+nav {
+    position: sticky;
+    top: 0;
 }
 
 .nav-menu {
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 15px;
+    padding-top: 5px;
+    background: #fff;
     height: 84px;
     width: 100%;
-    position: sticky;
-    top: 0;
     z-index: 1;
 }
 
@@ -31,6 +32,7 @@ body {
     align-items: center;
     width: 48px;
     height: 48px;
+    margin-right: 10px;
 }
 
 .menu-right {
@@ -44,33 +46,19 @@ body {
     margin: 0 20px;
 }
 
-.trial-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 142px;
-    height: 44px;
-    background: #171321;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 16px;
-    text-decoration: none;
-    padding: 11px 16px;
-}
 
-.trial-button:hover {
-    color: #171321;
-    background: #fff;
-    border: 4px;
-}
-
-.nav-menu__links a {
+.nav-menu__links a:not(.trial-button) {
     color: #74717A;
     font-size: 16px;
     text-decoration: none;
     padding: 8px;
     font-family: sans-serif;
     line-height: 1.5;
+    margin: 10px;
+}
+
+.nav-menu__links a:hover {
+    color: #171321;
 }
 
 .nav-menu__links {
@@ -79,6 +67,174 @@ body {
     list-style: none;
 }
 
-.nav-menu__links a:hover {
+.trial-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    color: #fff;
+    width: 142px;
+    height: 44px;
+    background: #171321;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 575;
+    text-decoration: none;
+    padding: 11px 16px;
+    margin-right: 20px;
+}
+
+.trial-button:hover {
     color: #171321;
+    background: #fff;
+    border: 1px solid #171321;
+
+    -webkit-transition: all 500ms ease;
+}
+
+.main {
+    height: 2150px;
+    width: 100%;
+    background: #fff;
+}
+
+.hero {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 1170px;
+    margin-top: 96px;
+    margin-bottom: 48px;
+    padding-bottom: 64px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 494px;
+    width: 100%;
+}
+
+#hero-margin {
+    margin-right: 32px;
+}
+
+.hero-title {
+    font-size: 64px;
+    font-weight: 555;
+    color: #171321;
+    font-family: sans-serif;
+    margin-right: 32px;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    color: #171321;
+    font-family: sans-serif;
+    margin: 16px 64px 24px 0px;
+    line-height: 1.15;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+
+    height: 44px;
+    margin: 24px 0 16px;
+
+}
+
+.hero-button__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    color: #fff;
+    width: 142px;
+    height: 44px;
+    background: #171321;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 575;
+    text-decoration: none;
+    padding: 11px 16px;
+    margin-right: 8px;
+}
+
+.hero-button__left:hover {
+    color: #171321;
+    background: #fff;
+    border: 1px solid #171321;
+
+    -webkit-transition: all 500ms ease;
+}
+
+.hero-button__right {
+    padding: 11px 16px;
+    font-size: 18px;
+    font-weight: 575;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #171321;
+}
+
+.hero-image {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 494px;
+    width: 100%;
+}
+
+.hero-image h2 {
+    font-size: 24px;
+    font-weight: 555;
+    width: auto;
+    color: #171321;
+    font-family: sans-serif;
+    margin-bottom: 14px;
+
+}
+
+.hero-image img {
+    height: 432px;
+    width: 100%;
+}
+
+.hero-sponsors {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    height: 80px;
+    width: 1168px;
+    margin-top: 96px;
+    margin-bottom: 64px;
+}
+
+.sponsor-logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+}
+
+.sponsor-logos h2 {
+    margin: 24px 0;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: -.8px;
+    color: #171321;
+    font-family: sans-serif;
+}
+
+.sponsor-logos a img {
+    height: auto;
+    width: 140px;
+
 }
