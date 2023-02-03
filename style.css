@@ -238,3 +238,27 @@ nav {
     width: 140px;
 
 }
+
+.lab-info {
+    background: url(/src/img/infinity-icon-cropped.svg) bottom 101% right 102%/2000px,linear-gradient(180deg,#fff 0 50%,#f6f3fe 50% 100%);
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 1168px;
+}
+
+.info-box {
+    height: 338px;
+    width: 332px;
+    opacity: 0;
+    border-radius: 4px 4px 4px 4px;
+}
